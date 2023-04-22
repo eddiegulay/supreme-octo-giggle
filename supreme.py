@@ -1,7 +1,7 @@
 from octo.giggle import Giggle
 
 
-target_ssid = "Your WiFi Network Name"
+target_ssid = "Wifi-name"
 
 giggle = Giggle(target_ssid)
 

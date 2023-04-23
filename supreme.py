@@ -1,9 +1,9 @@
 from octo.giggle import Giggle
 
 
-target_ssid = "Wifi-name"
+if __name__ == "__main__":
+    giggle = Giggle(wifi_name="Broken Zen (lite)")
 
-giggle = Giggle(target_ssid)
 
-# Start to giggle 😁😆😂
-giggle.giggle()
+    # Start to giggle 😁😆😂 after every 30 Minutes
+    giggle.giggle(interval = 30)

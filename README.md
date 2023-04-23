@@ -1,14 +1,17 @@
-# 🤪 Supreme Octo Giggle | Random MAC Address Changer 🤪
+# 🤪 Supreme Octo Giggle 
+## 😂 Random MAC Address Changer
 
 This is an experimental ethical hacking tool to randomize MAC address after a certain time interval. This tool can be used to improve your privacy and security when connected to public Wi-Fi networks.
 
-⚠️ Please note that this tool is for ethical purposes only. Any weird attempts or malicious usage of this tool are strictly prohibited and may lead to legal consequences. ⚠️
+⚠️ Please note that this tool is for ethical purposes only. Any weird attempts or malicious usage of this tool are strictly prohibited and may lead to legal consequences. 
 
 ## How it works
 
-Giggle is a Python script that changes the MAC address of your Wi-Fi network adapter at regular intervals to make it difficult for anyone to track your online activities. The script uses the Windows WLAN API to get the current network interface and change the MAC address of the adapter. You can specify a target Wi-Fi network to apply the MAC address changes only when connected to that network.
+Giggle is a Python script that changes the MAC address of your Wi-Fi network adapter at regular intervals to make it difficult for anyone to track your online activities. The script uses the Windows cytpes & native network adapters to get the current network interface and change the MAC address of the adapter. You can specify a target Wi-Fi network to apply the MAC address changes only when connected to that network.
 
 ## How to use
+
+### For Window Users
 
 1. Install Python 3 on your Windows machine.
 2. Download or clone the Giggle repository to your computer.
@@ -22,9 +25,30 @@ Giggle is a Python script that changes the MAC address of your Wi-Fi network ada
     giggle.giggle()
 ```
 6. Save the changes and run the `supreme.py` file using Python.
+### When running the code, it might complain about not having admin privileges  so you have to accept the admin privileges  prompt or follow the following steps
+To run the script with admin privileges, follow these steps:
+
+1. Open the Command Prompt as an administrator.
+   - Press the `Windows key` + `X` and select `Command Prompt (Admin)` from the menu.
+2. Navigate to the directory where the script is located.
+3. Type `python scriptname.py` and press `Enter`.
+   - Replace `scriptname` with the name of your Python script.
+4. If prompted, allow the script to make changes to your computer by clicking `Yes`.
+
 
 ```bash
 python supreme.py
+```
+
+### For Linux Users
+The script was primarily made for windows for any glitches and bugs... Sorry in advance
+1. Changing to a specific mac address 
+```bash
+$ python3 giggle.py wlan0 -m 00:FA:CE:DE:AD:00
+```
+2. Changing to a random mac address
+```bash
+$ python3 giggle.py wlan0 --random
 ```
 
 The script will run in the background and change the MAC address of your Wi-Fi adapter after every specified interval.

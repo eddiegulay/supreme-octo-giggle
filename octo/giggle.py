@@ -138,5 +138,3 @@ class Giggle:
          print("[+] Adapter is enabled again")
          print("..................................................")
          time.sleep(interval)
-         input()
-

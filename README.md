@@ -19,12 +19,15 @@ Giggle is a Python script that changes the MAC address of your Wi-Fi network ada
 4. Install the required Python modules by running `pip install -r requirements.txt`.
 5. Open the `supreme.py` file in a text editor and modify the `target_ssid` variable to match the name of your Wi-Fi network.
 ```python
-    target_ssid = "Your WiFi Network Name"
-    giggle = Giggle(target_ssid)
+    giggle = Giggle(wifi_name="Wifi name")
     # Start to giggle 😁😆😂
     giggle.giggle()
 ```
 6. Save the changes and run the `supreme.py` file using Python.
+7. open CMD with admin privileges, move to project dir then run 
+```bash
+   python supreme.py
+```
 ### When running the code, it might complain about not having admin privileges  so you have to accept the admin privileges  prompt or follow the following steps
 To run the script with admin privileges, follow these steps:
 

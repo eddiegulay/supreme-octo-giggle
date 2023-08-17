@@ -120,10 +120,12 @@ class Giggle:
       enable_output = subprocess.check_output(f"wmic path win32_networkadapter where index={adapter_index} call enable").decode()
       return enable_output
 
-   def giggle(self, interval):
+   def giggle(self, interval, mac_static=False, static_mac="FC-44-82-A4-FD-B7"):
       interval *= 60
       while True:
          new_mac_address = self.get_random_mac_address()
+         if mac_static:
+            new_mac_address = static_mac
     
          connected_adapters_mac = self.get_connected_adapters_mac_address()
          
